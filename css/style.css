@@ -1,0 +1,147 @@
+/* ----- Цвета проекта ----- */
+:root {
+    --main-color:           #477686;
+    --secondary-color:      #f4f4f4;
+}
+
+/* ----- Базовые надстройки ----- */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+} 
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+header {
+    background-image: url('../img/bg.jpg');
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--secondary-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+section {
+    padding: 0;
+}
+
+footer {
+    background: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* ----- Классы ----- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+}
+
+.title {
+    color: var(--main-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ----- Шапка ----- */
+
+.author {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 130px;
+}
+
+.author-foto img {
+    border: solid 3px var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* ----- Портфолио ----- */
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    min-width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+    margin: 0 0 10px;
+    color: var(--main-color);
+}
+
+.item-info {
+    margin-bottom: 14px;
+}
+
+.item-btn {
+    margin-bottom: 10px;
+    background: var(--main-color);
+    color: var(--secondary-color);
+    padding: 6px 14px;
+    border: solid 2px grey;
+    border-radius: 20px;
+}
+
+/* ----- Резюме ----- */
+
+.card {
+    background: var(--secondary-color);
+    margin: 10px 0;
+    padding: 4px 20px;
+    border-radius: 4px;
+}
+
+/* ----- Контакты ----- */
+
+.contact {
+    display: flex; 
+    justify-content: space-between; 
+    align-content: start;
+}
